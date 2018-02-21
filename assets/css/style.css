@@ -1,3 +1,58 @@
-p2{
-    color: hsl(140, 69%, 39%);
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url("https://assets.entrepreneur.com/content/3x2/1300/how-play-numbers-game.jpg");
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+  
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  color: rgb(252, 5, 5);
+}
+  
+h1 {
+
+  background-color: rgb(5, 0, 0);
+  color: rgb(247, 9, 9);
+  
+}
+
+.row {
+  padding-bottom: 3%;
+}
+
+h4 {
+  padding-bottom: 3%;
+  border-bottom: solid #fff 3px;
+}
+
+.dam {
+  max-width: 153px;
+  max-height: 123px;
+}
+
+#dams {
+  text-align: center;
+}
+
+.dam:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer */
+  height: 60px;
+  background-color: #2421ef;
+  text-align: center;
+  margin-top: 5%;
+  color: #fff;
 }

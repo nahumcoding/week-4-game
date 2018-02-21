@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Number Game</title>
     
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,27 +33,24 @@
         <div class="container">
         <div class="row-4">
                 <div class="col-sm-4"></div>
-            <h1 style= color:Tomato ><u><strong>Crystal Collector Game!</strong></u></h1></div>
+            <h1><u><strong>Crystal Collector Game!</strong></u></h1></div>
             
          </div>
-
-
         <div class="container">
-        <div class="row-4">
+        <div class="row-4"> 
                 <div class="col-sm-4"></div>
-        <h2>HOW PLAY</h2>
+        <h2>HOW TO PLAY</h2>
           </div>
 
-    <div class="container">
     
-
-            <ul>
+    <div class="col-xs-9" id="score" style="background-color:rgb(250, 248, 248);">
                     <li><p1>
                             You will be given <b> a random number</b> at the start of the game.</p1>
                         </li>
                   </ul>
-        
-            <ul>
+      
+                  <ul>
+              
                     <li><p2>
                             There are four crystals below. By clicking on the crystals, you will add a specific amount of point to your total score.
                         </p2></li>
@@ -70,7 +70,6 @@
                             <li><p5>Each time when the game starts, the game will change the value of each crystal.</p5></li>
                           </ul>
 
-
                           <ul>
                                 <li><p4>The value of each crystal is hidden from you untill you click on it.</p4></li>
                               </ul>
@@ -78,12 +77,54 @@
                               <ul>
                                     <li><p5>Each time when the game starts, the game will change the value of each crystal.</p5></li>
                                   </ul>
-    
-    
-   <!-- Optional theme -->
+
+                                  </div>
+                                 
+
+                                  <div class="container">
+                                  <div class="col-xs-6" id="score" style="background-color:rgb(250, 248, 248);">
+                                    <h4>SCORE BOARD</h4>
+                                    <p id= "wins">WINS: 0</p>
+                                    <p id= "losses">LOSSES: 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4"  id="matchnumber"  style="background-color:lime">
+                                      <h4>MATCH THIS NUMBER TO WIN:</h4>
+                                      <h1 id="random-number"></h1>
+                                  </div>
+
+                                  <div class="col-sm-5" style="background-color:#7e8edb">
+                                    <h4>YOURTOTAL:</h4>
+                                    <h1 id="playerScore"></h1>
+                                </div>
+                            </div>
+                        
+
+                                  <div class = "col-xs-4" id="gems">
+                                    
+                                    <p><img class= "dam" id="greendam" src="assets/images/green.png" alt="greendam"></p>
+                                    <p><img class= "dam" id="reddam" src="assets/images/crystalred.jpg" alt="reddam"></p>
+                                    <p><img class= "dam" id="bluedam" src="assets/images/bluecystal.jpg" alt="bluedam"></p>
+                                    <p><img class= "dam" id="helperdam" src="assets/images/helper.jpg" alt="helperdam"></p>
+                        </div>
+
+
+
+
+                                
+ 
+ <!--game code -->
+ <script src="assets/javascript/game.js"></script>
+      
+ <!-- Scripts from Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+   crossorigin="anonymous"></script>
+ <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
   </body>
 </html>
